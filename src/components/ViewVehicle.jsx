@@ -1,6 +1,7 @@
 import axios from 'axios'
 
 import { useEffect, useState } from 'react'
+import NavigationBar from './NavigationBar'
 
 
 const ViewVehicle= () => {
@@ -28,7 +29,7 @@ const ViewVehicle= () => {
 
 return (
     <div>
-      
+      <NavigationBar/>
         <table class="table">
             <thead>
                 <tr>
@@ -65,7 +66,7 @@ return (
                                 <td>{value.chargingdate}</td>
                                 <td>{value.timeslot}</td>
                                 <td>{value.estimatedunits}</td>
-                                <td>{value.echargingbayno}</td>
+                                <td>{value.chargingbayno}</td>
 
                             </tr>
                         )
